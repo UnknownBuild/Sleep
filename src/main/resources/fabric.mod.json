@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "id": "sleep",
+  "version": "${version}",
+
+  "name": "Sleep",
+  "description": "Auto broadcast sleep request when player in the bed.",
+  "authors": [
+    "UnknownBuild"
+  ],
+  "contact": {
+    "homepage": "https://github.com/UnknownBuild",
+    "sources": "https://github.com/UnknownBuild/Sleep",
+    "issues": "https://github.com/UnknownBuild/Sleep/issues"
+  },
+
+  "license": "",
+  "icon": "assets/sleep/icon.png",
+
+  "environment": "server",
+  "entrypoints": {
+    "server": [
+      "studio.xmatrix.minecraft.sleep.SleepServer"
+    ]
+  },
+  "mixins": [
+    "sleep.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.7.4",
+    "minecraft": "1.16.x"
+  },
+  "suggests": {
+    "flamingo": "*"
+  }
+}
